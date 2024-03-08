@@ -240,10 +240,11 @@ img {
   color: var(--first-color);
 }
 .home-img {
-  position: absolute;
+  position: inline-block;
   right: 0;
   bottom: 0;
-  width: 65%;
+  width: 95%;
+  justify-self: center;
 }
 
 /*BUTTONS*/
@@ -522,7 +523,7 @@ img.man-icons {
 }
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 760px) {
   body {
     margin: 0;
   }
@@ -573,7 +574,7 @@ img.man-icons {
     margin-right: var(--mb-4);
   }
   .home-img {
-    width: 39%;
+    width: 50%;
     max-width: 420px;
     bottom: 15%;
   }
@@ -612,6 +613,7 @@ img.man-icons {
     margin-right: auto;
   }
   .home-img {
+    position: absolute;
     right: 10%;
   }
 }
